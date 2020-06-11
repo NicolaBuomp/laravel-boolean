@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  height: 100vh;
+  color: #1b3c59;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 2rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+.main-content {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 1rem 4rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.navbar .navbar-brand {
+  text-transform: uppercase;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+}
+
+.navbar ul a {
+  color: #1b3c59;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.875em;
+  padding: 5px;
+  margin: 5px;
+}
+
+.navbar ul .active {
+  border-bottom: 2px solid #61ce4e;
+}
+
+.jumbo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  color: #1b3c59;
+}
+
+.jumbo .jumbo-text {
+  flex-basis: 50%;
+}
+
+.jumbo .jumbo-text h2 {
+  font-size: 70px;
+}
+
+.jumbo .jumbo-img {
+  flex-basis: 50%;
+}
+
+.jumbo .jumbo-img img {
+  height: auto;
+  max-width: 90%;
+}
+
+.title-students-page {
+  padding-top: 30px;
+  text-align: center;
+}
+
+.students {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.students header {
+  display: flex;
+}
+
+.students header img {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  max-width: 120px;
+  border-radius: 5px;
+  height: auto;
+}
+
+.students .student {
+  flex-basis: 45%;
+  display: block;
+  text-decoration: none;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  color: gray;
+  background-color: rgba(235, 235, 235, 0.801);
+}
+

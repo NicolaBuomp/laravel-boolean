@@ -1,0 +1,20 @@
+.jumbo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    color: #1b3c59 ;
+    .jumbo-text{
+        flex-basis: 50%;
+        h2{
+            font-size: 70px;
+        }
+    }
+    .jumbo-img{
+        flex-basis: 50%;
+        img{
+            height: auto;
+            max-width: 90%;
+        }
+    }
+}

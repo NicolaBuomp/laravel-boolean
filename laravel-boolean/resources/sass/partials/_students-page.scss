@@ -1,0 +1,30 @@
+.title-students-page{
+    padding-top:30px;
+    text-align: center;
+}
+
+.students {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    header {
+        display: flex;
+        img{
+            margin-right: 10px;
+            margin-bottom: 10px;
+            max-width: 120px;
+            border-radius: 5px;
+            height: auto;
+        }
+    }
+    .student {
+        flex-basis: 45%;
+        display: block;
+        text-decoration: none;
+        margin-bottom: 2rem;
+        padding: 1rem;
+        color: gray;
+        background-color: rgba(235, 235, 235, 0.801);
+    }
+}
+
