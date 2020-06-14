@@ -8,5 +8,8 @@
             </ul>
         </nav>
     </footer>
+
+    @yield('scripts')
+    
 </body>
 </html>

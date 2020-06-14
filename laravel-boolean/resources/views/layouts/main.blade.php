@@ -4,5 +4,5 @@
         @yield('main-content')
     </main>
 
-    @include('shared.footer')
+@include('shared.footer')
     

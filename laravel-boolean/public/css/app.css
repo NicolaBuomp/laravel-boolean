@@ -54,6 +54,10 @@ p {
   margin: 5px;
 }
 
+.navbar ul a:hover {
+  border-bottom: 2px solid #61ce4e;
+}
+
 .navbar ul .active {
   border-bottom: 2px solid #61ce4e;
 }

@@ -2,9 +2,21 @@
 @section('main-content')
     <h1 class="title-students-page">I nostri ex studenti su LinkedIn</h1>
 
+
+    <div class="students-filter">
+        <select name="filter" id="filter">
+            @foreach($genders as $gender)
+                <option value="{{ $gender }}">
+                    @if($gender == 'm') Uomo @elseif($gender == 'f') Donna @else Tutti @endif
+                </option>
+            @endforeach
+        </select>
+    </div>
+
+
     <div class="students">
         @foreach($students as $student)
-            <a href="{{route('student.show' , ['id' => $student['id']])}}" class="student">
+            <a href="{{route('student.show' , ['slug' => $student['slug']])}}" class="student">
                 <header>
                     <img src="{{ $student['img'] }}" alt="{{ $student['nome'] }}">
                     <div class="info">
@@ -19,4 +31,11 @@
             </a>
         @endforeach
     </div>
+
+    @include('shared.handlebars.student')
+
+@endsection
+
+@section('scripts')
+    <script src="{{ asset('/js/app.js')}}"></script>
 @endsection

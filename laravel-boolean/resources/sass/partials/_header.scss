@@ -18,6 +18,9 @@
             font-size: .875em;
             padding: 5px;
             margin: 5px;
+            &:hover{
+                border-bottom: 2px solid #61ce4e;
+            }
         }
         .active{
             border-bottom: 2px solid #61ce4e;
