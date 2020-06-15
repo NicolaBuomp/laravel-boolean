@@ -8,6 +8,13 @@ body {
   font-family: sans-serif;
   height: 100vh;
   color: #1b3c59;
+  display: flex;
+  flex-direction: column;
+}
+
+body main {
+  height: 100vh;
+  flex-grow: 1;
 }
 
 h1,
@@ -34,6 +41,11 @@ p {
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
+}
+
+.navbar img {
+  height: auto;
+  width: 300px;
 }
 
 .navbar .navbar-brand {
@@ -92,6 +104,18 @@ p {
   text-align: center;
 }
 
+.students-filter {
+  margin: 20px 0;
+}
+
+.students-filter select {
+  border: none;
+  border-bottom: 2px solid #ccc;
+  width: 100px;
+  padding: 5px;
+  font-weight: bold;
+}
+
 .students {
   display: flex;
   flex-wrap: wrap;
@@ -118,5 +142,49 @@ p {
   padding: 1rem;
   color: gray;
   background-color: rgba(235, 235, 235, 0.801);
+}
+
+.main-footer {
+  background-color: #1B3C59;
+  color: white;
+}
+
+.main-footer .nav-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.main-footer .nav-footer .info {
+  list-style: none;
+}
+
+.main-footer .nav-footer .info img {
+  height: auto;
+  width: 200px;
+}
+
+.main-footer .nav-footer .info li {
+  margin: 10px 0;
+}
+
+.main-footer .nav-footer .links {
+  list-style: none;
+}
+
+.main-footer .nav-footer .links li {
+  margin: 10px 0;
+}
+
+.main-footer .nav-footer .links li a {
+  text-decoration: none;
+  color: white;
+}
+
+.main-footer .nav-footer .links li a:hover {
+  text-decoration: underline;
 }
 

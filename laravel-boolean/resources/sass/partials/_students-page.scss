@@ -3,6 +3,17 @@
     text-align: center;
 }
 
+.students-filter{
+    margin: 20px 0;
+    select{
+        border: none;
+        border-bottom: 2px solid #ccc;
+        width: 100px;
+        padding: 5px;
+        font-weight: bold;
+    }
+}
+
 .students {
     display: flex;
     flex-wrap: wrap;

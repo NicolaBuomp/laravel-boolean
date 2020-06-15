@@ -10,7 +10,7 @@
 
     <header class="main-header">
         <nav class="navbar">
-            <a href="" class="navbar-brand">Boolean</a>
+            <a href="" class="navbar-brand"><img src="https://www.boolean.careers/images/common/logo.png" alt=""></a>
             <ul>
                 <li> <a @if (Request::route()->getName() == 'static-page.home') class ="active" @endif href="{{route('static-page.home')}}">Home</a></li>
                 <li> <a href="">Corso</a></li>
