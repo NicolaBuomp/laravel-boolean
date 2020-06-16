@@ -4,9 +4,10 @@ require('./bootstrap');
 
 $(document).ready(function () {
     
+    
     var container = $('.student');
     var filter = $('#filter'),
-    apiUrl = window.location.protocol + '://' + window.location.host + '/api/students/genders';   
+        apiUrl = window.location.protocol + '://' + window.location.host + '/api/students/genders';   
 
     var source = $('#student-template').html();
     var template = Handlebars.compile(source);
@@ -14,6 +15,7 @@ $(document).ready(function () {
 
 
     filter.on('change', function () {
+        
         var gender = $(this).val();
 
         $.ajax({
